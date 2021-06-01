@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  postgresql:
+    image: postgres:latest
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    environment:
+      - PGDATA=/var/lib/postgresql/data
+      - POSTGRES-DB=alexeyvfrolov
+      - POSTGRES_USER=alexeyvfrolov
+      - POSTGRES_PASSWORD=yxr3ZJ6gqD2mWQm
